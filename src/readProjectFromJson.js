@@ -3,7 +3,7 @@
  * into the 'parsedProject' class
  */
 
-import ParsedProject from './parsedProject'
+import ParsedProject from './parsedProject.js'
 import fs from 'fs'
 
 export default pathToExportedProject => {

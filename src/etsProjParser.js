@@ -3,15 +3,15 @@
  * The 'knx_master.xml' is parsed in knxMasterXMLParser.js
  */
 
-import ProjectStructure from './projectStructure'
-import ParsedProject from './parsedProject'
+import ProjectStructure from './projectStructure.js'
+import ParsedProject from './parsedProject.js'
 import DecompressZip from 'decompress-zip'
 import util from 'util'
 import sax from 'sax'
 import fs from 'fs'
-import ProductInformationParser from './productInformationParser'
-import KnxMasterXMLParser from './knxMasterXMLParser'
-import ApplicationInformationParser from './applicationInformationParser'
+import ProductInformationParser from './productInformationParser.js'
+import KnxMasterXMLParser from './knxMasterXMLParser.js'
+import ApplicationInformationParser from './applicationInformationParser.js'
 
 const etsProjParser = async function (etsProjectFilePath, workdir) {
   // Create a function wide context

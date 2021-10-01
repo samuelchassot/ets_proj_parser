@@ -1,5 +1,5 @@
-import etsProjParser from './etsProjParser'
-import readProject from './readProjectFromJson'
+import etsProjParser from './etsProjParser.js'
+import readProject from './readProjectFromJson.js'
 
 async function main () {
   let result

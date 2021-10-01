@@ -6,6 +6,7 @@
   "enigines": {
     "node": ">=8"
   },
+  "type": "module",
   "scripts": {
     "test": "babel-node src/test.js",
     "build": "babel src/ -d dist"
