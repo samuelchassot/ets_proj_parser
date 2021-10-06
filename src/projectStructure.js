@@ -281,7 +281,10 @@ export default class {
 
   // This function adds a device reference to the current building part
   addDeviceReferenceToBuildingPart (referenceID) {
-    this.getCurrentBuildingPart(false).deviceReferences.push({ __deviceRefID: referenceID })
+    if(!(typeof this.getCurrentBuildingPart(false).deviceReferences === "undefined")){
+      this.getCurrentBuildingPart(false).deviceReferences.push({ __deviceRefID: referenceID })
+    }
+    
   }
 
   // This function adds a function to the current building part
